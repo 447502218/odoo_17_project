@@ -104,6 +104,7 @@ class Lead(models.Model):
     _track_duration_field = 'stage_id'
 
     # Description
+    # 测试提交
     name = fields.Char(
         'Opportunity', index='trigram', required=True,
         compute='_compute_name', readonly=False, store=True)
